@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Dog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Serif Pro', serif;
+        }
+        .logo-container {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            color: white;
+        }
+        .red-left-third {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 22%;
+            height: 100%;
+            background-color: rgb(202, 35, 35);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 25px;
+        }
+        li {
+            margin-bottom: 30px;
+            font-size: 20pt;
+        }
+        li:first-child {
+            margin-top: 0px;
+        }
+        .open-daily-text {
+            font-family: 'Courgette', cursive;
+            font-size: 20pt;
+            margin: 10px 0;
+        }
+        li:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s ease-in-out;
+            cursor:pointer;
+        }
+        .home-link {
+            color: inherit;
+            text-decoration: none;
+        }
+        .home-link:hover {
+            color: inherit;
+        }
+        .menu-title {
+            font-family: 'Courgette', cursive;
+            font-size: 30pt;
+            position: absolute;
+            top: 40px;
+            left: 22%;
+            width: 78%;
+            text-align: center;
+        }
+        .menu-container {
+            position: absolute;
+            top: 120px;
+            left: 25%;
+            width: 78%;
+            font-family: 'Source Serif Pro', serif;
+            font-size: 20px;
+        }
+        .menu-list li:nth-child(odd) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="red-left-third">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <p class="open-daily-text">Open Daily Since 1966</p>
+            <ul>
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li>Menu</li>
+                <li>Hot-dog or Sausage</li>
+                <li>Location</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-title">
+        Menu
+    </div>
+    <div class="menu-container">
+        <ul class="menu-list">
+            <li>top dog FRANKFURTER</li>
+            <li>All beef - kosher style</li>
+            <li class="bold">GARLIC FRANKFURTER</li>
+            <li>3/4 beef, 1/4 pork, fresh garlic</li>
+            <li class="bold">BOCKWURST</li>
+            <li>1/2 pork, 1/2 veal, milk, eggs</li>
+            <li class="bold">KIELBASA (POLISH)</li>
+            <li>2/3 pork, 1/3 beef - hearty</li>
+            <li class="bold">CALABRESE (ITALIAN)</li>
+            <li>Pork, paprika, chili, fennel — semi-hot</li>
+            <li class="bold">HOT LINK (LOUSIANA STYLE)</li>
+            <li>Beef and four kinds of pepper — h-h-hottt</li>
+        </ul>
+    </div>
+</body>
+</html>

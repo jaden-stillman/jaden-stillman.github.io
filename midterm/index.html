@@ -1,6 +1,117 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        MIDTERM
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Dog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Serif Pro', serif;
+        }
+        .logo-container {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            color: white;
+        }
+        .red-left-third {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 22%;
+            height: 100%;
+            background-color: rgb(202, 35, 35);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 25px;
+        }
+        li {
+            margin-bottom: 30px;
+            font-size: 20pt;
+        }
+        li:first-child {
+            margin-top: 0px;
+        }
+        .open-daily-text {
+            font-family: 'Courgette', cursive;
+            font-size: 20pt;
+            margin: 10px 0;
+        }
+        .image-container {
+            position: absolute;
+            top: 40px;
+            left: 22%;
+            width: 78%;
+            height: calc(100% - 40px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .centered-image {
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 40px;
+        }
+        .image-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about-us-text {
+            font-family: 'Courgette', cursive;
+            font-size: 20pt;
+            margin-bottom: 40px;
+        }
+        .about-us-description {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 16pt;
+			margin-left: 60px;
+			margin-right: 60px;
+        }
+    li:hover {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+		cursor:pointer;
+    }
+	.menu-link {
+        color: inherit;
+        text-decoration: none;
+    }
+    .menu-link:hover {
+        color: inherit;
+    }
+    </style>
+</head>
+<body>
+    <div class="red-left-third">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <p class="open-daily-text">Open Daily Since 1966</p>
+            <ul>
+                <li>Home</li>
+                <li><a href="2.html" class="menu-link">Menu</a></li>
+                <li>Hot-dog or Sausage</li>
+                <li>Location</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-container">
+        <div class="image-text-wrapper">
+            <img src="panel.jpeg" alt="Panel" class="centered-image">
+            <div class="about-us-text">About Us</div>
+            <div class="about-us-description">
+                Then lotsa late nights on the town in San Francisco in the sixties.. but where to find a real natural casing hot dog? Forget it. Doggie Diner was convenient, but ... top dog time! Sampling around for the best frankfurter to sell (and eat!) led to other fine sausages and the idea was born to offer them as hot dogs as well. When no right site could be found in S.F. or Sausalito, hello, Berkeley. That was 1966 and with the paint hardly dry we opened on —surprise— a home football game day. Fifteen minutes later it was full house madness. Talk about learning to host and cook on the run!
+				With such fans it's been interesting, often challenging — but fun. As in that boy's world, largely gone by, we continue to seek out the best sausage from the best sausage-makers who, born to a tradition of taste, we believe, tend to serve it better. Calabrese? How ya gonna top S.F.'s award-winning house of Molinari? Buon Gusto! Or that little Portuguese plant in San Leandro that makes but two products, one of which, the linguiça, we are proud to say, stands pork shoulder butt higher than any of its competitors in the Bay Area. Then there's the cooked bratwurst from Saag's — as authentic an old-world European taste as you're likely to find. And from another quality third generation producer, Schwarz of S.F., bockwurst unsurpassed! (The "top dog" says that in over fifty years and four continents, he's never tasted better.)
+				We remain evermore on the prrrowl for unique sausages for affordable and convenient hot dog enjoyment.
+            </div>
+        </div>
+    </div>
+</body>
 </html>
