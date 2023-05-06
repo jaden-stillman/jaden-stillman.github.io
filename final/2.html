@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Background with Centered Image</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('gradient.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      font-family: 'Ultra', serif;
+      font-size: 20pt;
+    }
+
+    .hidden {
+      opacity: 0;
+      transition: opacity 2s;
+    }
+
+    img.centered {
+      max-width: 50%;
+      max-height: 50%;
+      transition: opacity 2s;
+    }
+  </style>
+</head>
+<body>
+  <div class="text-container">
+    CLICK ME →
+    <span id="price-text" class="hidden">pre-order price: $1,000,000</span>
+  </div>
+  <img src="yo.png" alt="Centered Image" class="centered" id="centered-image">
+  <script>
+    const centeredImage = document.getElementById('centered-image');
+    const priceText = document.getElementById('price-text');
+
+    centeredImage.addEventListener('click', function () {
+      centeredImage.style.opacity = '0';
+      setTimeout(() => {
+        priceText.classList.remove('hidden');
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

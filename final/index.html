@@ -1,6 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        FINAL
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspiration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Carter+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url('Background.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Ceviche One', cursive;
+      font-size: 14pt;
+    }
+    h1 {
+      text-align: center;
+      margin: 0;
+      padding-top: 20px;
+    }
+    p {
+      font-family: 'Carter One', cursive;
+      text-align: center;
+      margin: 10px 0 20px 0;
+    }
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .image-wrapper {
+      display: flex;
+      align-items: center;
+      width: calc(33.333% - 50px);
+      height: calc((100% - 100px) / 2);
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+    .image-grid img:hover {
+      transform: scale(1.2);
+    }
+    .guitar-image {
+      margin-top: 50px;
+    }
+    .guitar-image img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    .guitar-image img:hover {
+        transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Inspiration</h1>
+  <p>I have always loved music. Below are some of my favorite albums. They have inspired me to create my own band this summer and to make my own album. Click the guitar to pre-order!</p>
+  <div class="image-grid">
+    <div class="image-wrapper"><img src="1.jpeg" alt="Image 1"></div>
+    <div class="image-wrapper"><img src="2.jpeg" alt="Image 2"></div>
+    <div class="image-wrapper"><img src="3.jpeg" alt="Image 3"></div>
+    <div class="image-wrapper"><img src="4.jpeg" alt="Image 4"></div>
+    <div class="image-wrapper"><img src="5.jpeg" alt="Image 5"></div>
+    <div class="image-wrapper"><img src="6.jpeg" alt="Image 6"></div>
+  </div>
+  <div class="guitar-image">
+    <a href="2.html">
+      <img src="Guitar.png" alt="Guitar"> 
+    </a>
+  </div>
+</body>
 </html>
+
